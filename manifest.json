@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
   
-    "name": "zoom auto close",
+    "name": "zoom & teams auto close",
     "description": "This extension automatically closes tabs left by zoom meeting application.",
     "version": "1.0",
     
@@ -19,6 +19,7 @@
     "content_scripts": [
       {
         "matches": [
+            "https://teams.microsoft.com/dl/launcher/launcher.html",
             "https://zoom.us/postattendee",
             "https://*.zoom.us/postattendee*",
             "https://zoom.us/j/*",
